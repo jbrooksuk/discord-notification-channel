@@ -1,5 +1,5 @@
 {
-    "name": "jamesbrooks/discord-notification-channel",
+    "name": "jbrooksuk/discord-notification-channel",
     "description": "Laravel notification channel for Discord",
     "type": "library",
     "license": "MIT",
