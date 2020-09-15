@@ -1,0 +1,34 @@
+{
+    "name": "jamesbrooks/discord-notification-channel",
+    "description": "Laravel notification channel for Discord",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Brooks",
+            "email": "james@alt-three.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "illuminate/notifications": "~5.8.0|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JamesBrooks\\Discord\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JamesBrooks\\Discord\\DiscordChannelServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
