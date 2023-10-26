@@ -18,7 +18,7 @@ class DiscordChannelServiceProvider extends ServiceProvider
     {
         Notification::resolved(function (ChannelManager $service) {
             $service->extend('discord', function ($app) {
-                return new Channels\DiscordWebhookChannel($app->make(HttpClient::class));
+                return $app->make(Channels\DiscordWebhookChannel::class);
             });
         });
     }
